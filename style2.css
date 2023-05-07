@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+header {
+	background-color:lightblue;
+	color:black;
+	text-align: center;
+	padding: 20px; 
+}
+nav {
+	color:black;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	display: block;
+	padding: 10px;
+	color: #333;
+	text-decoration: none;
+}
+nav a:hover {
+	background-color:lightblue;
+}
+main {
+	padding: 20px;
+}
+
+.column:hover {
+	background-color:lightblue;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+  
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  .row {
+	display: flex;
+  }
+  
+  .column {
+	flex: 33.33%;
+	padding: 5px;
+  }
+  
+  * {box-sizing: border-box;}
+
+  .img-zoom-container {
+	position: relative;
+  }
+  
+  .img-zoom-lens {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	/*set the size of the lens:*/
+	width: 40px;
+	height: 40px;
+  }
+  
+  .img-zoom-result {
+	border: 1px solid #d4d4d4;
+	/*set the size of the result div:*/
+	width: 300px;
+	height: 300px;
+  }
+  h2{
+	color:rgb(66, 66, 230);
+  }
+  
+  .footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:lightcyan;
+	color:black;
+	text-align: center;
+  }
